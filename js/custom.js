@@ -14,6 +14,7 @@
     $('body').vegas({
         slides: [
             { src: 'images/augustin.jpg' },
+            { src: 'images/Hugo.jpeg' },
             { src: 'images/gitan.jpeg' },
             { src: 'images/maitres_doeuvre.png' },
             { src: 'images/Rat.jpeg' },
