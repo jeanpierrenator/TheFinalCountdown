@@ -13,8 +13,12 @@
     // ABOUT SLIDER
     $('body').vegas({
         slides: [
-            { src: 'images/slide-image01.jpg' },
-            { src: 'images/slide-image02.jpg' },
+            { src: 'images/augustin.jpg' },
+            { src: 'images/gitan.jpeg' },
+            { src: 'images/maitres_doeuvre.png' },
+            { src: 'images/Rat.jpeg' },
+            { src: 'images/TicketResto.jpeg' },
+            { src: 'images/vin_teddy-1.png' },
             { src: 'images/maxence_mac_2.png' }
             
         ],
