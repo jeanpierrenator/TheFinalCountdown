@@ -14,13 +14,16 @@
     $('body').vegas({
         slides: [
             { src: 'images/augustin.jpg' },
+            { src: 'images/The_Slap_2.gif' },
             { src: 'images/Hugo.jpeg' },
             { src: 'images/gitan.jpeg' },
+            { src: 'images/guilaume.gif' },
             { src: 'images/maitres_doeuvre.png' },
             { src: 'images/Rat.jpeg' },
             { src: 'images/TicketResto.jpeg' },
             { src: 'images/vin_teddy-1.png' },
             { src: 'images/maxence_mac_2.png' }
+            
             
         ],
         timer: false,
