@@ -1,159 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-     <title>Enfin la fin</title>
-<!-- 
-
-Get Ready Template
-
-https://templatemo.com/tm-521-get-ready
-
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="team" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/vegas.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
-
+  <title>Page de contact</title>
 </head>
 <body>
-
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-
-               <span class="spinner-rotate"></span>
-               
-          </div>
-     </section>
-
-
-     <!-- GRID LINE -->
-    <section class="grid">
-         <div class="container">
-            <div class="row">
-
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-
-            </div>
-         </div>
-    </section>
-
-
-    
-
-     <!-- HOME -->
-     <section id="home">
-        <div class="overlay"></div>
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="home-info">
-                              <h1>Compteur avant les vacances <br>(Un peu long encore)</h1>
-                              <!-- You can change the date time in init.js file -->
-                              <ul class="countdown">
-                                   <li>
-                                        <span class="weeks">14</span>
-                                        <h3>Weeks</h3>
-                                   </li>
-                                   <li>
-                                        <span class="days">14</span>
-                                        <h3>Days</h3>
-                                   </li>
-                                   <li>
-                                        <span class="hours">10</span>
-                                        <h3>hours</h3>
-                                   </li>
-                                   <li>
-                                        <span class="minutes">15</span>
-                                        <h3>minutes</h3>
-                                   </li>
-                                   <li>
-                                        <span class="seconds">34</span>
-                                        <h3>seconds</h3>
-                                   </li>     
-                              </ul>
-                              
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-
-               <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="home-info">
-                              <h1>Compteur avant la fin <br>(Un peu long encore)</h1>
-                              <!-- You can change the date time in init.js file -->
-                              <ul class="countdown">
-                                   <li>
-                                        <span class="weeks2">14</span>
-                                        <h3>Weeks</h3>
-                                   </li>
-                                   <li>
-                                        <span class="days2">14</span>
-                                        <h3>Days</h3>
-                                   </li>
-                                   <li>
-                                        <span class="hours2">10</span>
-                                        <h3>hours</h3>
-                                   </li>
-                                   <li>
-                                        <span class="minutes2">15</span>
-                                        <h3>minutes</h3>
-                                   </li>
-                                   <li>
-                                        <span class="seconds2">34</span>
-                                        <h3>seconds</h3>
-                                   </li>     
-                              </ul>
-                              
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-     
-     <audio class="audio" controls autoplay>
-      <source src="sounds/The_Final_Countdown.mp3" type="audio/mpeg">
-    </audio>
-   
-
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/vegas.min.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/init.js"></script>
-     <script src="js/custom.js"></script>
-
+  <h1>Qui voulez-vous contacter ?</h1>
+  <form onsubmit="validate()">
+    <input type="text" id="name" placeholder="Entrez un nom">
+    <button type="button" onclick="validate()">Valider</button>
+  </form>
+  <div id="video" style="display:none;">
+    <a href="https://youtu.be/FCU0CFZQ2VY" target="_blank">Cliquez pour avoir les réponse</a> <!-- Changement de la balise <iframe> en <a> -->
+  </div>
+  <script>
+    function validate() {
+      var name = document.getElementById("name").value;
+      if (name.toLowerCase() == "maxwell") {
+        document.getElementById("video").style.display = "block";
+      } else {
+        alert("Nom incorrect");
+      }
+      return false;
+    }
+  </script>
 </body>
 </html>
